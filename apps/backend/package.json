@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/index.ts",
+  "scripts": {
+    "start": "node .",
+    "dev": "tsx watch --env-file=.env ./src/index.ts",
+    "build": "tsc -p tsconfig.build.json && tsc-alias",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "devDependencies": {
+    "@smart-note/eslint-config": "workspace:^",
+    "@smart-note/typescript-config": "workspace:^",
+    "eslint": "9.19.0"
+  }
+}

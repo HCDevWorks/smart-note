@@ -1,0 +1,6 @@
+{
+  "name": "@smart-note/typescript-config",
+  "files": [
+    "base.json"
+  ]
+}
